@@ -29,6 +29,7 @@ export class NewsapiservicesService {
   healthApiUrl = `https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=${this.API_KEY}`;
   
   entertainmentApiUrl = `https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=${this.API_KEY}`;
+  generalApiUrl = `https://newsapi.org/v2/top-headlines?country=in&category=general&apiKey=${this.API_KEY}`;
   
   //topheading
   topHeading(): Observable<any> {
@@ -50,6 +51,9 @@ export class NewsapiservicesService {
   }
   entertainmentNews(): Observable<any> {
     return this._http.get(this.entertainmentApiUrl);
+  }
+  generalNews(): Observable<any> {
+    return this._http.get(this.generalApiUrl);
   }
 
 }

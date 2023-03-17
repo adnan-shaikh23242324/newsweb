@@ -10,7 +10,8 @@ import { TechnewsComponent } from './technews/technews.component';
 import { BusinessnewsComponent } from './businessnews/businessnews.component';
 import { SportsnewsComponent } from './sportsnews/sportsnews.component';
 import { HealthnewsComponent } from './healthnews/healthnews.component';
-import { EntertainmentnewsComponent } from './entertainmentnews/entertainmentnews.component'
+import { EntertainmentnewsComponent } from './entertainmentnews/entertainmentnews.component';
+import { GeneralnewsComponent } from './generalnews/generalnews.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { EntertainmentnewsComponent } from './entertainmentnews/entertainmentnew
     BusinessnewsComponent,
     SportsnewsComponent,
     HealthnewsComponent,
-    EntertainmentnewsComponent
+    EntertainmentnewsComponent,
+    GeneralnewsComponent
   ],
   imports: [
     BrowserModule,
